@@ -66,7 +66,13 @@ The HIDAPI library must be installed for the streamdeck Python module to work co
   - Download the latest `hidapi-win.zip` file from https://github.com/libusb/hidapi/releases
   - Copy the `hidapi.dll` file inside the ZIP file into `C:\Windows\System32` as administrator
 
+### Mac-specific
 
+You need to install the hidapi in your system. The easiest way is using homebrew. 
+
+```bash
+brew install hidapi
+```
 
 ## Settings
 

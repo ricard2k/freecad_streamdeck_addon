@@ -440,6 +440,7 @@ def start(FreeCAD):
 
   # Determine the platform
   is_win = sys.platform[0:3] == "win"
+  is_mac = sys.platform == "darwin"
 
   # Determine the installation directory
   install_dir = os.path.dirname(__file__)
@@ -462,6 +463,8 @@ def start(FreeCAD):
   # depending on the platform
   font_filename = params.streamdeck_key_text_font_filename_windows \
 				if is_win else \
+      params.streamdeck_key_text_font_filename_mac \
+        if is_mac else \
 			params.streamdeck_key_text_font_filename_linux
 
   # Initialize the streamdeck object
